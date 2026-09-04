@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastor Rafael Tenório | Lidere de dentro pra fora</title>
+  <meta name="description" content="Mentoria, cursos e e-books para líderes que querem impactar o Reino de Deus com excelência.">
+  <meta name="keywords" content="pastor rafael tenório, mentoria liderança cristã, CC Videira Santos Dumont">
+  <meta name="author" content="Rafael Tenório">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rafaeltenorio.com.br">
+  <meta property="og:title" content="Pastor Rafael Tenório | Lidere de dentro pra fora">
+  <meta property="og:description" content="Mentoria, cursos e e-books para líderes que querem impactar o Reino de Deus com excelência.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rafaeltenorio.com.br">
+  <meta property="og:image" content="https://rafaeltenorio.com.br/pastor-hero.webp">
+  <meta property="og:locale" content="pt_BR">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rafael Tenório",
+    "jobTitle": "Pastor / Mentor",
+    "affiliation": {"@type": "Organization", "name": "CC Videira Santos Dumont"},
+    "url": "https://rafaeltenorio.com.br",
+    "sameAs": ["https://instagram.com/rafaeltenorio_"]
+  }
+  </script>
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C9A84C',
+            dark: '#0A0A0A',
+            off: '#F5F0E8',
+          },
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0A0A0A; color: #F5F0E8; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .text-stroke { -webkit-text-stroke: 1px rgba(201,168,76,0.3); color: transparent; }
+    .text-fill { color: #C9A84C; -webkit-text-stroke: 0; }
+
+    .line-accent { width: 40px; height: 2px; background: #C9A84C; }
+
+    .btn-primary { background: #C9A84C; color: #0A0A0A; font-weight: 600; transition: all 0.3s; letter-spacing: 0.05em; }
+    .btn-primary:hover { background: #E8D48B; transform: translateY(-1px); }
+
+    .btn-outline { border: 1px solid rgba(201,168,76,0.25); color: #C9A84C; transition: all 0.3s; }
+    .btn-outline:hover { border-color: #C9A84C; background: rgba(201,168,76,0.05); }
+
+    .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, #C9A84C, transparent); animation: scrollPulse 2s ease-in-out infinite; }
+    @keyframes scrollPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+    .hero-type { font-family: 'Bebas Neue', sans-serif; line-height: 0.85; letter-spacing: -0.02em; }
+
+    .grid-bg { 
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .number-big { font-family: 'Bebas Neue', sans-serif; font-size: clamp(80px, 12vw, 160px); line-height: 0.85; color: rgba(201,168,76,0.08); position: absolute; top: -20px; right: -10px; pointer-events: none; }
+
+    .ebook-hover { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    .ebook-hover:hover { transform: translateY(-8px) rotate(-0.5deg); }
+
+    .stagger-1 { transition-delay: 0.05s; }
+    .stagger-2 { transition-delay: 0.1s; }
+    .stagger-3 { transition-delay: 0.15s; }
+    .stagger-4 { transition-delay: 0.2s; }
+
+    .accent-bar { position: absolute; left: 0; top: 0; width: 3px; height: 100%; background: #C9A84C; }
+
+    .nav-blur { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+
+    ::selection { background: rgba(201,168,76,0.3); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-[#0A0A0A]/60">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10 h-14 flex items-center justify-between">
+      <a href="#" class="flex items-center">
+        <span class="font-display text-lg tracking-wide text-off">PR RAFAEL TENÓRIO</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="#sobre" class="nav-link text-[10px] font-medium text-white/25 hover:text-gold transition tracking-[0.15em] uppercase">Sobre</a>
+        <a href="#mentoria" class="nav-link text-[10px] font-medium text-white/25 hover:text-gold transition tracking-[0.15em] uppercase">Mentoria</a>
+        <a href="#cursos" class="nav-link text-[10px] font-medium text-white/25 hover:text-gold transition tracking-[0.15em] uppercase">Cursos</a>
+        <a href="#ebooks" class="nav-link text-[10px] font-medium text-white/25 hover:text-gold transition tracking-[0.15em] uppercase">E-books</a>
+      </div>
+      <a href="https://wa.me/5585992096711?text=Ol%C3%A1%2C%20Pastor%20Rafael%21%20Vim%20pelo%20seu%20site" target="_blank" class="btn-primary px-5 py-2 rounded-full text-[10px] font-bold tracking-[0.15em] uppercase">Contato</a>
+      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="w-5 h-0.5 bg-off transition-all duration-300"></span>
+        <span class="w-5 h-0.5 bg-off transition-all duration-300"></span>
+        <span class="w-3 h-0.5 bg-off transition-all duration-300"></span>
+      </button>
+    </div>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-[#0A0A0A]/95 nav-blur border-t border-white/[0.04]">
+      <div class="max-w-[1300px] mx-auto px-6 py-6 flex flex-col gap-4">
+        <a href="#sobre" class="nav-link text-sm text-white/40 hover:text-gold transition py-2 border-b border-white/[0.04]">Sobre</a>
+        <a href="#mentoria" class="nav-link text-sm text-white/40 hover:text-gold transition py-2 border-b border-white/[0.04]">Mentoria</a>
+        <a href="#cursos" class="nav-link text-sm text-white/40 hover:text-gold transition py-2 border-b border-white/[0.04]">Cursos</a>
+        <a href="#ebooks" class="nav-link text-sm text-white/40 hover:text-gold transition py-2 border-b border-white/[0.04]">E-books</a>
+        <a href="https://wa.me/5585992096711?text=Ol%C3%A1%2C%20Pastor%20Rafael%21%20Vim%20pelo%20seu%20site" target="_blank" class="btn-primary px-5 py-3 rounded-full text-xs font-bold tracking-wider uppercase text-center mt-2">Contato WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-screen min-h-[600px] flex flex-col justify-end pb-16 lg:pb-24 overflow-hidden">
+    <img src="pastor-hero.webp" alt="Pastor Rafael Tenório" width="1024" height="1027" fetchpriority="high" decoding="async" class="absolute inset-0 w-[91%] h-[91%] m-auto object-cover object-top" style="image-rendering: high-quality; filter: contrast(1.02) saturate(1.05);">
+    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-dark/60 via-transparent to-transparent"></div>
+    <div class="relative z-10 max-w-[1300px] mx-auto px-6 lg:px-10 w-full">
+      <div class="flex items-end justify-between">
+        <div class="max-w-[700px]">
+          <div class="line-accent mb-5 reveal"></div>
+          <h1 class="hero-type text-[3.5rem] sm:text-[5rem] lg:text-[6.5rem] xl:text-[7.5rem] text-off reveal stagger-1">
+            LIDERE<br>
+            <span class="text-fill">DE DENTRO</span><br>
+            PRA FORA
+          </h1>
+          <p class="text-white/35 text-sm mt-6 max-w-[380px] leading-relaxed font-light reveal stagger-2">
+            Preparo líderes para pensar, decidir e carregar o propósito com maturidade.
+          </p>
+          <div class="flex gap-3 mt-8 reveal stagger-3">
+            <a href="#mentoria" class="btn-primary px-7 py-3 rounded-full text-xs font-bold tracking-wider uppercase">Começar</a>
+            <a href="#sobre" class="btn-outline px-7 py-3 rounded-full text-xs font-bold tracking-wider uppercase">Sobre</a>
+          </div>
+        </div>
+        <div class="hidden lg:flex flex-col items-center gap-3">
+          <div class="scroll-line"></div>
+          <span class="text-[9px] text-white/20 tracking-[0.2em] uppercase writing-vertical" style="writing-mode:vertical-rl">Scroll</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="py-8 border-y border-white/[0.04] grid-bg">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-3 gap-6">
+        <div class="reveal">
+          <p class="hero-type text-5xl lg:text-6xl text-gold">10+</p>
+          <p class="text-[10px] text-white/25 mt-1 tracking-[0.12em] uppercase">Anos</p>
+        </div>
+        <div class="reveal stagger-1">
+          <p class="hero-type text-5xl lg:text-6xl text-gold">18K+</p>
+          <p class="text-[10px] text-white/25 mt-1 tracking-[0.12em] uppercase">Seguidores</p>
+        </div>
+        <div class="reveal stagger-2">
+          <p class="hero-type text-5xl lg:text-6xl text-gold">3</p>
+          <p class="text-[10px] text-white/25 mt-1 tracking-[0.12em] uppercase">E-books</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-10 lg:py-14">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-10">
+        <div class="lg:col-span-4 reveal">
+          <p class="text-[10px] text-gold/50 tracking-[0.2em] uppercase mb-5">Quem é</p>
+          <h2 class="hero-type text-4xl lg:text-5xl text-off leading-[0.9]">
+            UMA VOZ<br>
+            <span class="text-stroke">QUE PREPARA</span><br>
+            A PRÓXIMA<br>
+            GERAÇÃO
+          </h2>
+        </div>
+        <div class="lg:col-span-8 lg:col-start-6 reveal stagger-1">
+          <div class="relative pl-8 border-l border-white/[0.06]">
+            <div class="accent-bar"></div>
+            <p class="text-white/40 text-[15px] leading-[1.8] font-light">
+              Sou Rafael Tenório, pastor da CC Videira Santos Dumont e mentor de líderes. Há mais de uma década dedico minha vida a preparar pessoas que pensam, decidem e carregam o propósito.
+            </p>
+            <p class="text-white/40 text-[15px] leading-[1.7] font-light mt-4">
+              Porque liderança não é criar dependentes. É desenvolver gente que caminha com autonomia e ajuda outras pessoas a crescerem.
+            </p>
+            <div class="mt-5">
+              <p class="text-xs font-semibold text-off">Rafael Tenório</p>
+              <p class="text-[10px] text-white/25">Pastor • Mentor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITAÇÃO -->
+  <section class="py-8 lg:py-10 border-y border-white/[0.04]">
+    <div class="max-w-[900px] mx-auto px-6 lg:px-10 text-center reveal">
+      <p class="text-gold/30 text-[56px] lg:text-[80px] font-display leading-none select-none">"</p>
+      <blockquote class="font-display text-2xl sm:text-3xl lg:text-4xl text-off/80 leading-[1.15] -mt-6 lg:-mt-8">
+        Liderança não é criar pessoas que dependem de você. É desenvolver pessoas que conseguem caminhar com autonomia.
+      </blockquote>
+      <div class="line-accent mx-auto mt-5"></div>
+    </div>
+  </section>
+
+  <!-- MENTORIA -->
+  <section id="mentoria" class="py-10 lg:py-14">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="mb-6 reveal">
+        <p class="text-[10px] text-gold/50 tracking-[0.2em] uppercase mb-3">Mentoria</p>
+        <h2 class="hero-type text-4xl lg:text-5xl text-off">LIDERE DE DENTRO PRA FORA</h2>
+      </div>
+
+      <div class="space-y-3">
+        <!-- 1:1 -->
+        <div class="group bg-[#0e0e0e] rounded-[12px] p-5 lg:p-6 border border-white/[0.04] hover:border-gold/20 transition-all duration-500 reveal relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-0 h-full bg-gold/[0.03] group-hover:w-full transition-all duration-700"></div>
+          <div class="relative z-10 grid lg:grid-cols-12 gap-4 items-center">
+            <div class="lg:col-span-1">
+              <span class="hero-type text-3xl text-gold/20 group-hover:text-gold/50 transition">01</span>
+            </div>
+            <div class="lg:col-span-7">
+              <p class="text-[10px] text-gold/40 tracking-[0.15em] uppercase mb-1">Individual</p>
+              <h3 class="font-display text-xl lg:text-2xl text-off tracking-wide">MENTORIA 1:1</h3>
+              <p class="text-white/30 text-sm mt-2 leading-relaxed">Sessões personalizadas. Diagnóstico completo, plano de crescimento e acompanhamento semanal.</p>
+            </div>
+            <div class="lg:col-span-4 flex lg:justify-end">
+              <a href="https://wa.me/5585992096711?text=Ol%C3%A1%2C%20Pastor%20Rafael%21%20Tenho%20interesse%20na%20mentoria%20individual" target="_blank" class="btn-primary px-6 py-2.5 rounded-full text-[10px] font-bold tracking-wider uppercase">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grupo -->
+        <div class="group bg-[#0e0e0e] rounded-[12px] p-5 lg:p-6 border border-white/[0.04] hover:border-gold/20 transition-all duration-500 reveal relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-0 h-full bg-gold/[0.03] group-hover:w-full transition-all duration-700"></div>
+          <div class="absolute top-4 right-4 bg-gold text-[#0A0A0A] text-[8px] font-bold tracking-[0.2em] px-3 py-1 rounded-full uppercase">Popular</div>
+          <div class="relative z-10 grid lg:grid-cols-12 gap-4 items-center">
+            <div class="lg:col-span-1">
+              <span class="hero-type text-3xl text-gold/20 group-hover:text-gold/50 transition">02</span>
+            </div>
+            <div class="lg:col-span-7">
+              <p class="text-[10px] text-gold/40 tracking-[0.15em] uppercase mb-1">Grupo</p>
+              <h3 class="font-display text-xl lg:text-2xl text-off tracking-wide">LIDERE DE DENTRO PRA FORA</h3>
+              <p class="text-white/30 text-sm mt-2 leading-relaxed">Mentoria em grupo para líderes que querem impactar o Reino de Deus com excelência.</p>
+            </div>
+            <div class="lg:col-span-4 flex lg:justify-end">
+              <a href="https://wa.me/5585992096711?text=Ol%C3%A1%2C%20Pastor%20Rafael%21%20Tenho%20interesse%20na%20mentoria%20em%20grupo" target="_blank" class="btn-primary px-6 py-2.5 rounded-full text-[10px] font-bold tracking-wider uppercase">Inscreva-se</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section id="cursos" class="py-10 lg:py-14 border-y border-white/[0.04]">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="reveal">
+          <p class="text-[10px] text-gold/50 tracking-[0.2em] uppercase mb-3">Cursos Online</p>
+          <h2 class="hero-type text-4xl lg:text-5xl text-off mb-4">APRENDA NO SEU TEMPO</h2>
+          <p class="text-white/30 text-sm leading-relaxed max-w-[400px]">Cursos gravados com conteúdo prático e bíblico. Acesso vitalício.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="bg-[#0e0e0e] rounded-[12px] p-6 border border-white/[0.04] hover:border-gold/20 transition-all reveal">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-[10px] text-gold/40 tracking-[0.15em] uppercase mb-1">Destaque</p>
+                <h3 class="font-display text-lg text-off tracking-wide">LIDERE DE DENTRO PRA FORA</h3>
+                <p class="text-white/30 text-sm mt-2">5 módulos • 21 aulas • Acesso vitalício</p>
+                <p class="text-white/30 text-xs mt-3 leading-relaxed">O curso une princípios cristãos, práticas de liderança e suporte para formar líderes íntegros, preparados para multiplicar legado, sem esgotamento ou pressões desnecessárias.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="text-white/25 text-xs flex items-start gap-2"><span class="text-gold mt-0.5">•</span> Comunidade exclusiva para troca de experiências</li>
+                  <li class="text-white/25 text-xs flex items-start gap-2"><span class="text-gold mt-0.5">•</span> Ferramentas bíblicas para equilíbrio emocional e espiritual</li>
+                  <li class="text-white/25 text-xs flex items-start gap-2"><span class="text-gold mt-0.5">•</span> Roteiro prático para aplicação em ministérios e igrejas</li>
+                </ul>
+              </div>
+              <a href="https://liderededentroparafora.com.br" target="_blank" class="btn-primary px-5 py-2 rounded-full text-[10px] font-bold tracking-wider uppercase shrink-0">Inscrever</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- E-BOOKS -->
+  <section id="ebooks" class="py-10 lg:py-14">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <p class="text-[10px] text-gold/50 tracking-[0.2em] uppercase mb-3">E-books</p>
+          <h2 class="hero-type text-4xl lg:text-5xl text-off">CONTEÚDO QUE TRANSFORMA</h2>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-5">
+        <div class="ebook-hover bg-[#0e0e0e] rounded-[12px] overflow-hidden border border-white/[0.04] reveal group">
+          <div class="aspect-[16/10] flex flex-col items-center justify-center p-5 relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e]">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gold/50"></div>
+            <h3 class="font-display text-lg text-off tracking-wide text-center leading-tight">O QUE SE ESPERA DE UM LÍDER?</h3>
+            <div class="w-8 h-px bg-gold/40 my-3"></div>
+            <p class="text-[10px] text-white/30 tracking-wider uppercase">Rafael Tenório</p>
+          </div>
+          <div class="p-4 border-t border-white/[0.04]">
+            <p class="text-white/35 text-sm leading-relaxed">Princípios, atitudes e postura que um líder precisa ter.</p>
+            <a href="https://chk.eduzz.com/797ZO6Y40E" target="_blank" class="btn-outline px-5 py-2 rounded-full text-[10px] font-bold tracking-wider uppercase mt-4 inline-block">Saiba mais</a>
+          </div>
+        </div>
+        <div class="ebook-hover bg-[#0e0e0e] rounded-[12px] overflow-hidden border border-white/[0.04] reveal stagger-1 group">
+          <div class="aspect-[16/10] flex flex-col items-center justify-center p-5 relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e]">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gold/50"></div>
+            <h3 class="font-display text-lg text-off tracking-wide text-center leading-tight">DE VOLTA AO BÁSICO!</h3>
+            <div class="w-8 h-px bg-gold/40 my-3"></div>
+            <p class="text-[10px] text-white/30 tracking-wider uppercase">Rafael Tenório</p>
+          </div>
+          <div class="p-4 border-t border-white/[0.04]">
+            <p class="text-white/35 text-sm leading-relaxed">Reavaliar relações, rever princípios e aprender lições.</p>
+            <a href="https://chk.eduzz.com/69K1G4B7WO" target="_blank" class="btn-outline px-5 py-2 rounded-full text-[10px] font-bold tracking-wider uppercase mt-4 inline-block">Saiba mais</a>
+          </div>
+        </div>
+        <div class="ebook-hover bg-[#0e0e0e] rounded-[12px] overflow-hidden border border-white/[0.04] reveal stagger-2 group">
+          <div class="aspect-[16/10] flex flex-col items-center justify-center p-5 relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0e0e0e]">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gold/50"></div>
+            <h3 class="font-display text-lg text-off tracking-wide text-center leading-tight">PREPARANDO A PRÓXIMA GERAÇÃO</h3>
+            <div class="w-8 h-px bg-gold/40 my-3"></div>
+            <p class="text-[10px] text-white/30 tracking-wider uppercase">Rafael Tenório</p>
+          </div>
+          <div class="p-4 border-t border-white/[0.04]">
+            <p class="text-white/35 text-sm leading-relaxed">Como mentes constroem sucessores e multiplicam o Reino.</p>
+            <a href="https://chk.eduzz.com/E9OGV4Z5WB" target="_blank" class="btn-outline px-5 py-2 rounded-full text-[10px] font-bold tracking-wider uppercase mt-4 inline-block">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="py-10 lg:py-14 border-y border-white/[0.04]">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="text-center mb-6 reveal">
+        <p class="text-[10px] text-gold/50 tracking-[0.2em] uppercase mb-3">Depoimentos</p>
+        <h2 class="hero-type text-4xl lg:text-5xl text-off">VIDAS QUE FORAM IMPACTADAS</h2>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-5">
+        <div class="reveal">
+          <div class="bg-[#0e0e0e] rounded-[12px] p-6 border border-white/[0.04] h-full flex flex-col">
+            <p class="text-white/40 text-sm leading-[1.8] flex-1 italic">"A mentoria do Pastor Rafael mudou minha forma de liderar. Hoje tenho clareza e unção no que faço. Minha célula cresceu 3x em 6 meses."</p>
+            <div class="flex items-center gap-3 mt-5 pt-4 border-t border-white/[0.04]">
+              <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center font-display text-gold text-sm">ML</div>
+              <div>
+                <p class="text-xs font-semibold text-off">Marcos Lima</p>
+                <p class="text-[10px] text-white/20">Líder de Célula • SP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal stagger-1">
+          <div class="bg-[#0e0e0e] rounded-[12px] p-6 border border-white/[0.04] h-full flex flex-col">
+            <p class="text-white/40 text-sm leading-[1.8] flex-1 italic">"O curso me deu um sistema. Agora sei onde estou, pra onde vou e como levar minha equipe junto."</p>
+            <div class="flex items-center gap-3 mt-5 pt-4 border-t border-white/[0.04]">
+              <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center font-display text-gold text-sm">AS</div>
+              <div>
+                <p class="text-xs font-semibold text-off">Ana Souza</p>
+                <p class="text-[10px] text-white/20">Pastora auxiliar • BH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal stagger-2">
+          <div class="bg-[#0e0e0e] rounded-[12px] p-6 border border-white/[0.04] h-full flex flex-col">
+            <p class="text-white/40 text-sm leading-[1.8] flex-1 italic">"Nenhum curso foi tão prático e transformador. Fala a língua do líder que está no campo."</p>
+            <div class="flex items-center gap-3 mt-5 pt-4 border-t border-white/[0.04]">
+              <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center font-display text-gold text-sm">RF</div>
+              <div>
+                <p class="text-xs font-semibold text-off">Ricardo Ferreira</p>
+                <p class="text-[10px] text-white/20">Líder de Louvor • CWB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-10 lg:py-14 relative">
+    <div class="absolute inset-0 opacity-[0.04]">
+      <img src="pastor-hero.webp" alt="" class="w-full h-full object-cover object-top" aria-hidden="true" decoding="async" style="image-rendering: high-quality; filter: contrast(1.02) saturate(1.05);">
+    </div>
+    <div class="max-w-[700px] mx-auto px-6 text-center relative z-10 reveal">
+      <p class="text-[10px] text-gold/50 tracking-[0.2em] uppercase mb-4">Comece agora</p>
+      <h2 class="hero-type text-4xl sm:text-5xl lg:text-6xl text-off leading-[0.9]">
+        A LIDERANÇA QUE DEUS<br>
+        PLANEJOU PRA VOCÊ<br>
+        <span class="text-fill">COMEÇA AQUI</span>
+      </h2>
+      <p class="text-white/30 mt-6 text-sm leading-relaxed max-w-[380px] mx-auto">
+        Não adia mais. Cada dia sem preparo é um dia que o ministério fica aquém.
+      </p>
+      <div class="mt-6">
+        <a href="https://wa.me/5585992096711?text=Ol%C3%A1%2C%20Pastor%20Rafael%21%20Vim%20pelo%20seu%20site" target="_blank" class="btn-primary px-9 py-4 rounded-full text-xs font-bold tracking-wider uppercase inline-block">
+          Falar com o Pastor Rafael
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/[0.04] py-8">
+    <div class="max-w-[1300px] mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-6">
+            <div>
+              <span class="font-display text-lg text-off tracking-wide">RAFAEL TENÓRIO</span>
+            </div>
+          <p class="text-white/25 text-xs leading-relaxed max-w-[340px]">
+            Pastor, mentor e formador de líderes. CC Videira Santos Dumont.
+          </p>
+        </div>
+        <div class="md:col-span-3">
+          <p class="text-[9px] text-white/30 tracking-[0.15em] uppercase mb-3">Navegação</p>
+          <ul class="space-y-1.5">
+            <li><a href="#sobre" class="text-xs text-white/30 hover:text-gold transition">Sobre</a></li>
+            <li><a href="#mentoria" class="text-xs text-white/30 hover:text-gold transition">Mentoria</a></li>
+            <li><a href="#cursos" class="text-xs text-white/30 hover:text-gold transition">Cursos</a></li>
+            <li><a href="#ebooks" class="text-xs text-white/30 hover:text-gold transition">E-books</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <p class="text-[9px] text-white/30 tracking-[0.15em] uppercase mb-3">Contato</p>
+          <ul class="space-y-1.5 text-xs text-white/30">
+            <li><a href="https://wa.me/5585992096711" target="_blank" class="hover:text-gold transition">(85) 99209-6711</a></li>
+            <li><a href="mailto:rafaeltenorioa@gmail.com" class="hover:text-gold transition">rafaeltenorioa@gmail.com</a></li>
+            <li><a href="https://instagram.com/rafaeltenorio_" target="_blank" class="hover:text-gold transition">@rafaeltenorio_</a></li>
+          </ul>
+          <div class="flex gap-2 mt-3">
+            <a href="https://wa.me/5585992096711" target="_blank" class="w-8 h-8 rounded-full bg-white/[0.03] flex items-center justify-center hover:bg-gold/10 transition text-gold"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+            <a href="https://instagram.com/rafaeltenorio_" target="_blank" class="w-8 h-8 rounded-full bg-white/[0.03] flex items-center justify-center hover:bg-gold/10 transition text-gold"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 pt-5 border-t border-white/[0.04] flex flex-col md:flex-row items-center justify-between gap-2 text-[10px] text-white/15">
+        <span>© 2026 Rafael Tenório • CC Videira Santos Dumont</span>
+        <span class="font-display tracking-wider">LIDERE DE DENTRO PRA FORA</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scroll-top" class="fixed bottom-5 left-5 z-50 w-10 h-10 bg-[#0e0e0e] border border-white/[0.1] rounded-full flex items-center justify-center opacity-0 pointer-events-none hover:border-gold/30 transition-all duration-300" aria-label="Voltar ao topo">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gold"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/5585992096711?text=Ol%C3%A1%2C%20Pastor%20Rafael%21%20Vim%20pelo%20seu%20site" target="_blank" class="fixed bottom-5 right-5 z-50 w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.2)] hover:scale-105 transition-transform" aria-label="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    // Menu Mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLines = menuToggle.querySelectorAll('span');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuLines[0].classList.toggle('rotate-45');
+      menuLines[0].classList.toggle('translate-y-2');
+      menuLines[1].classList.toggle('opacity-0');
+      menuLines[2].classList.toggle('rotate-45');
+      menuLines[2].classList.toggle('translate-y-[-8px]');
+      menuLines[2].classList.toggle('w-5');
+    });
+
+    // Fechar menu ao clicar em um link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuLines[0].classList.remove('rotate-45', 'translate-y-2');
+        menuLines[1].classList.remove('opacity-0');
+        menuLines[2].classList.remove('rotate-45', 'translate-y-[-8px]', 'w-5');
+      });
+    });
+
+    // Scroll Reveal
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Indicador de seção ativa no menu
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-gold');
+        link.classList.add('text-white/25');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('text-gold');
+          link.classList.remove('text-white/25');
+        }
+      });
+    });
+
+    // Botão Voltar ao Topo
+    const scrollTopBtn = document.getElementById('scroll-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        scrollTopBtn.classList.add('opacity-100');
+      } else {
+        scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        scrollTopBtn.classList.remove('opacity-100');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
